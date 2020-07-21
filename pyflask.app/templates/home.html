@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block title %}
+Index
+{% endblock %}
+{% block content %}
+<div id="container">
+    <section>
+        <form action="/" method="POST">
+            <label for="first_name">
+                <input type="text" name="first_name" placeholder="Unesi ime" required>
+            </label>
+            <label for="last_name">
+                <input type="text" name="last_name" placeholder="Unesi prezime" required>
+            </label>
+            <label for="email">
+                <input type="email" name="email" placeholder="Unesi e-mail adresu">
+            </label>
+            <label for="tel">
+                <input type="tel" name="tel" placeholder="Unesi broj telefona">
+            </label>
+            <input type="submit">
+        </form>
+    </section>
+    
+    <section>
+        <button id="btn">Botun</button>
+        <table>
+            <thead>
+              <tr>
+                <td id="ime_prezime">
+                    MALI STIPE
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="mail">
+                    MALI ANTE
+                </td>
+              </tr>
+              <tr>
+                <td id="telefon">
+                    MALI MATE
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock %}
